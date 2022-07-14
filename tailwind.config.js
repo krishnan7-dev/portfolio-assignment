@@ -2,7 +2,18 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    screens: {
+      'mobile': {'max': '448px'}
+    },
+    colors: {
+      'lightest': '#FFF2F2',
+      'light': '#FAD4D4',
+      'dark': '#EF9F9F',
+      'darkest': '#F47C7C'
+    },
+    extend: {}
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 }

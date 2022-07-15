@@ -8,13 +8,14 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header id="home" class="h-screen bg-fixed bg-dark desktop:flex justify-center">
         <button
         type="button"
         title="nav"
+        onclick="navDown"
         class="bg-[url('/img/nav_icon.svg')] bg-no-repeat w-7 h-7 absolute right-4 top-4
         focus:outline-none focus:ring-0 desktop:hidden"></button>
         <ul class="w-2/4 h-[10vh] flex justify-between p-8 bg-light bg-opacity-80 items-center rounded m-6 mobile:hidden">
@@ -22,6 +23,13 @@
             <li><a href="#" class="text-darkest hover:text-[#000] transition-colors ease-in-out delay-100">About Me</a></li>
             <li><a href="#" class="text-darkest hover:text-[#000] transition-colors ease-in-out delay-100">My Skills</a></li>
             <li><a href="#" class="text-darkest hover:text-[#000] transition-colors ease-in-out delay-100">Contact Me</a></li>
+        </ul>
+
+        <ul class="desktop:hidden flex items-center flex-col h-full justify-evenly bg-light translate-y-[-100%]">
+            <li><a href="#" class="text-4xl text-center">Home</a></li>
+            <li><a href="#" class="text-4xl text-center">About Me</a></li>
+            <li><a href="#" class="text-4xl text-center">My Skills</a></li>
+            <li><a href="#" class="text-4xl text-center">Contact Me</a></li>
         </ul>
     </header>
     <main>

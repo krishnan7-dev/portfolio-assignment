@@ -1412,6 +1412,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+@media (max-width: 448px) {
+  .mobile\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 448px) {
   .desktop\:flex {
     display: flex;

@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  purge: ['./src/**/*.js', './public/index.html'],
-  content: ["./index.html"],
+  content: ["./*.{html, js}"],
   theme: {
     screens: {
-      'mobile': {'max': '448px'},
-      'desktop': {'min': '448px'}
+      'mobile': {'max': '730px'},
+      'desktop': {'min': '730px'}
     },
     colors: {
       'lightest': '#FFF2F2',
